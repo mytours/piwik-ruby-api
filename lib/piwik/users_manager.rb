@@ -18,6 +18,7 @@ module Piwik
       userEmailExists
       setUserAccess
       getTokenAuth
+      createAppSpecificTokenAuth
     }
     
     def self.get params
