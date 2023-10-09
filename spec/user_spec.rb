@@ -21,7 +21,7 @@ describe 'Piwik::User' do
     subject.destroy.should eq(true)
   }
   
-  it { expect {Piwik::User.load('mike_ness')}.to raise_error }
+  it { expect {Piwik::User.load('mike_ness')}.to raise_error(Piwik::ApiError) }
   describe "#load existing" do
     before { 
       @user = build(:user) 
