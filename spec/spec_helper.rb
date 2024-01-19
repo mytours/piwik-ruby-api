@@ -3,9 +3,10 @@ require 'piwik'
 
 RSpec.configure do |config|
   Dir[File.join(File.dirname(__FILE__),'spec','support''**','*.rb')].each {|f| require f}
-  config.mock_with :rspec
   config.expect_with(:rspec) { |c| c.syntax = [:should, :expect] }
   config.order = "random"
+
+  config.mock_with(:rspec) { |mocks| mocks.syntax = [:expect, :should] }
 end
 
 def stub_rails_env &block
