@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency('xml-simple')
   s.add_dependency('rest-client')
-  s.add_dependency('activesupport', '>= 3.0', '< 7.2')
+  s.add_dependency('activesupport', '>= 3.0', '< 8')
   s.add_development_dependency('rspec', '< 4.0')
   s.add_development_dependency('rspec-mocks', '< 4.0')
   s.add_development_dependency('rspec-its', '< 4.0')
